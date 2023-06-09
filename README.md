@@ -16,6 +16,16 @@ In order to run this container you'll need docker installed.
 
 ### Usage
 
+You can use this in a `bitbucket-pipelines.yml` as follows:
+
+```
+- pipe: docker://iagllctech/dep-check-pipeline:latest
+  variables:
+      ARGS: '--scan package-lock.json -f JSON'
+```
+
+See your provider for how to use in your CI/CD system.
+
 #### Environment Variables
 
 | Variable Name | Description | Default |
