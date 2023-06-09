@@ -16,7 +16,7 @@ pipelines:
           script:
             - echo $DOCKER_PASSWORD | docker login --username $DOCKER_USERNAME --password-stdin
             - docker build -t dep-check-pipeline .
-            - docker tag dep-check-pipeline iagllctech//dep-check-pipeline:latest
-            - docker tag dep-check-pipeline iagllctech//dep-check-pipeline:$(date '+%Y.%m.%d')
+            - docker tag dep-check-pipeline iagllctech/dep-check-pipeline:latest
+            - docker tag dep-check-pipeline iagllctech/dep-check-pipeline:$(date '+%Y.%m.%d')
             - docker push iagllctech/dep-check-pipeline:latest
             - docker push iagllctech/dep-check-pipeline:$(date '+%Y.%m.%d')
