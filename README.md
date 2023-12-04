@@ -1,4 +1,4 @@
-# IAG Benefits, LLC Maintenane Bitbucket Pipeline Dependency Checker Container (iagllctech/dep-check-pipeline)
+# IAG Benefits, LLC Bitbucket Pipeline Dependency Checker Container (iagllctech/dep-check-pipeline)
 
 This repository provides a daily updated version of OWASP's Dependency Checker command line utility usable in bitbucket pipelines (or any other pipeline).
 
